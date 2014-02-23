@@ -1,0 +1,217 @@
+/*  ----------------------------------------------------------- */
+/*  Feuilles de styles des squelettes spip-thelia		*/
+/*  ----------------------------------------------------------- */
+.ficheProduit { float: left; width: 470px; margin-left: 10px; }
+.caracteristiqueProduit ul { padding-left: 0; }
+.caracteristiqueProduit ul li { list-style: none; }
+
+.formulaire_livraison label, .formulaire_paiement label, .formulaire_reduction label { display: inline; }
+
+.bouton-actualiser { border: none; background: none; text-decoration: underline; color: #7A6D2C; vertical-align:text-bottom; }
+
+.boutonMonCompteContenu, .lien-etapes-thelia { text-align: right; margin: 10px; }
+.boutonMonCompteContenu a, .lien-etapes-thelia { color: #7A6D2C; text-decoration: underline; }
+.bouton-etapes-thelia { float: right; }
+
+a.lien-retour-thelia { color: #666; text-decoration: underline; font-size: .9em; }
+
+
+.obligatoire { color: #FF0000; }
+
+.formulaire-thelia fieldset, .formulaire-produit fieldset { border: none; padding: 0; }
+.formulaire-produit { float: left; }
+.formulaire-produit .declinaisonProduit select { width: auto; display: inline; padding-right:1em; }
+.formulaire-produit .prixProduit small { display: block; } 
+/* style propre aux modeles <produit>*/
+
+.produits .hentry { padding: 0; margin: 0; margin-right: 5px; margin-top: 10px; width: 174px; }
+.produits .hentry .formulaire_spip .boutons { float: left; }
+.produits .hentry .formulaire_spip .boutons input.submit { margin-left: 0; }
+
+.produits_thelia { float: left; clear: left; margin-right: 1em; }
+.thelia_promo {	font-size: 1.1em; color: #F60; font-weight: bold; }
+.thelia_reappro { font-style: italic; font-size: .9em; }
+.autres-images-produit { clear: both; }
+
+#infos_etapes { height: 63px; overflow: hidden; margin: 0; padding: 0; padding-left: 10px; background: #8c8c8c url(../../../prive/images/degrade-etapes-clair-left.gif) no-repeat right top; text-align: left; font-family: helvetica, arial, sans; list-style: none; }
+#infos_etapes.infos_etape_4 { background-image: url(../../../prive/images/degrade-etapes-vert-left.gif); background-color: green; }
+#infos_etapes li { float: left; margin-left: -28px; padding-left: 24px; background: url(../../../prive/images/degrade-etapes-fonce-left.gif) no-repeat left top; color: #555; text-align: left; font-size: 0.85em; line-height: 1.05em; }
+#infos_etapes li .fond { width: 8em; height: 69px; padding-right: 2em; padding-top: 10px; background: url(../../../prive/images/degrade-etapes-fonce-left.gif) no-repeat -30px top; }
+#infos_etapes li a {color: #555555; }
+#infos_etapes li em {float:left;position:absolute;top:-1000px;}
+#infos_etapes li span.numero_etape { float: left; display: block; height: 50px; padding: 7px 3px 0 3px; font-weight: bold; font-size: 3em; }
+#infos_etapes li.on { background-image: url(../../../prive/images/degrade-etapes-vert-left.gif); color: #fff; font-weight: bold; }
+#infos_etapes li.on .fond { background-color: #88f560; background-image:  url(../../../prive/images/degrade-etapes-vert-left.gif); }
+#infos_etapes li.erreur { background-image: url(../../../prive/images/degrade-etapes-rouge-left.gif); }
+#infos_etapes li.erreur .fond { background-color: #ff6868; background-image: url(../../../prive/images/degrade-etapes-rouge-left.gif); }
+#infos_etapes li.prochains { background-image: url(../../../prive/images/degrade-etapes-clair-left.gif); }
+#infos_etapes li.prochains .fond { background-color: #dbdbdb;background-image: url(../../../prive/images/degrade-etapes-clair-left.gif); }
+
+/* Surcharge */
+.formulaire_spip.formulaire_produit { background:transparent; border: 2px solid #f0f0f0; border-radius: 1em }
+.formulaire_produit .boutons { background:transparent; border:none; }
+
+.produits_thelia { width: 200px; }
+.produits_thelia .h3 { color: #D60; font: bold 1.0em Arial,sans-serif; padding-top:10px; }
+.produits_thelia img { width: 150px; }
+.thelia_description { color: #979797; font: 12px/20px Arial,sans-serif; }
+.thelia_prix { color: #979797; font: 12px/20px Arial,sans-serif; font-weight: bold; padding-top: 5px; }
+.thelia_sans_promo {
+	font-size: 1.1em;
+	float: right;
+	margin: 0.4em  -0.5em 0 0;
+	padding: 8px 12px;
+	font-size: 1.2em;
+	color: #fff;
+	background: #A9C83D;
+	
+	-webkit-border-radius: 8px 0 0 8px;
+	-khtml-border-radius: 8px 0 0 8px;
+	-moz-border-radius: 8px 0 0 8px;
+	-ms-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+}
+
+#infos_etapes li .fond { font-size: 10px; }
+#infos_etapes li.prochains .fond { width: 100px; }
+
+table#panier.spip {
+    border: medium none;
+    font-family: Helvetica,Arial,sans-serif;
+    margin-left: 0;
+    width: 100%;
+}
+table#panier.spip a:link, table#panier.spip a:visited {
+    font-size: 12px;
+    border:none
+}
+table#panier.spip a:hover, table#panier.spip a:active {
+    font-size: 12px;
+    text-decoration:underline;
+}
+table#panier.spip caption {
+    color: #1E526C;
+    margin: 1em 0;
+    text-align: left;
+}
+table#panier.spip tr.row_first {
+    background-color: #666;
+    color: white;
+}
+table#panier.spip td {
+    border: medium none;
+    padding: 6px 8px;
+}
+table#panier.spip th {
+    font-size: 11px;
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+.formulaire_panier .boutons { background:transparent; border:none; }
+
+
+
+/* A modifier */
+div.liste.articles.produits ul.liste-items { width: 100%; }
+div.liste.articles.produits ul.liste-items li.item.hentry {
+display:block;
+width : 300px;
+height: auto;
+float:left;
+}
+div.liste.articles.produits ul.liste-items li.item.hentry[float="left"] + li.item.hentry {
+float:none;
+}
+
+
+
+/* BUTTONS */
+.buttons a, .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+.buttons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+/* STANDARD COLOR BUTTONS */
+button:hover, .buttons a:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.buttons a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+/* POSITIVE */
+button.positive, .buttons a.positive{
+	background-color:#33c1d4;
+    color:#ffffff;
+    border: 1px solid #33c1d4;   
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#33c1d4), to(#2DAEBF) );
+	background: -webkit-linear-gradient(#33c1d4 20%, #2DAEBF);
+	background: -moz-linear-gradient(#33c1d4 20%, #2DAEBF);
+	background: -ms-linear-gradient(#33c1d4 20%, #2DAEBF);
+	background: -o-linear-gradient(#33c1d4 20%, #2DAEBF);
+	background: linear-gradient(#33c1d4 20%, #2DAEBF);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    	
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px; 
+}
+.buttons a.positive:hover, button.positive:hover{
+    background: #3598AF;
+	border-color: #3598AF;
+}
+
+.buttons a.positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+
+/* Feuille de style personnel */
+
+/* Formulaire de recherche dans l'entête de la page d'accueil page d'accueil */
+#formulaire_recherche {width: 183px;}
+#header #formulaire_recherche label {color: #fff; text-transform: uppercase;}
+#header .formulaire_recherche .text {padding-left:24px;background:#FFF url("img/loupe.png") no-repeat 4px center;text-align:left;}
+#header .formulaire_recherche form input.search {width:75%; height:30px;}
+/*#header .form-search {padding-top:30px; margin: auto;}*/
+#header .form-search {padding-top:160px; margin: auto;}
+
+/* Barre de navigation horizontale */
+#nav {
+	float: left;
+	width: 100%;
+	background: #000000;
+}
+
+#nav .navbar-inner {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#nav a:link, #footer a:link {
+  border-bottom: none;
+}
+
+/* Pied de page */
+#footer a:hover {
+  border-bottom: 1px solid;
+}
+
+/* Modification de la couleur de fond du menu colonne gauche d'une rubrique */
+/* .nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #007299
+} */
+
+/* Modification de la couleur de fond des entêtes */
+/* #header {
+    position: relative;
+    text-align: left;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #0054ff;
+    background-image: -moz-linear-gradient(left, #007f99, #0054ff);
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#007f99), to(#0054ff));
+    background-image: -webkit-linear-gradient(left, #007f99, #0054ff);
+    background-image: -o-linear-gradient(left, #007f99, #0054ff);
+    background-image: linear-gradient(to right, #007f99, #0054ff);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff007f99', endColorstr='#ff0054ff', GradientType=1);
+    color: #fff
+} */
+
+
+/* Contenu du site */
+a:link {
+  transition: .5s;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+acronym[title] {
+    border-bottom: .1em dotted;
+    /* cursor: help; */
+    padding-bottom: 2px;
+}
+
+h2.spip, h3.spip {
+    font-weight: 700;
+    color: #D60;
+}
+
+.box {
+    border-radius: 1em
+}
+
+/* Menu moncompte Thelia colonne gauche */
+.moncompte a:link, .moncompte a:visited {
+    border:none
+}
+.moncompte a:hover, .moncompte a:active {
+    text-decoration:underline;
+}
+
+.moncompte h2.h2 {
+    border: 0 none;
+    display: block;
+    list-style-type: none;
+    margin-top: -18px;
+    margin-bottom: -18px;
+    margin-left : -27px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.moncompte ul {
+    border: 0 none;
+    display: block;
+    list-style-type: none;
+    margin-top: -17px;
+    margin-right: -17px;
+    margin-bottom: 18px;
+    margin-left: -27px;
+    padding-top: 5px;
+    padding-right: 17px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+}
+
+.moncompte ul li {
+    border-bottom: 1px solid #E8E6E3;
+    padding: 10px 18px;
+}
+
+/* Contenu panier de la rubrique boutique */
+.contenu_panier {
+    border-top: 1px solid;
+    padding-top: 15px;
+    text-align:center;
+}
+
+.contenu_panier a:link, .contenu_panier a:visited {
+    border:none
+}
+.contenu_panier a:hover, .contenu_panier a:active {
+    text-decoration:underline;
+}
+
+
+/* Pied de la rubrique Boutique */
+.row-fluid {
+    width: 100%;
+    border-top: 1px solid;
+    *zoom: 1
+}
+
+.row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.row-fluid:after {
+    clear: both
+}
+
+.row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.1276595744681%;
+    *margin-left: 2.0744680851064%
+}
+
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0
+}
+
+.row-fluid [class*="span"]:last-child {
+    margin-left: 0;
+    float: right
+}
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.1276595744681%
+}
+
+.row-fluid .span3 {
+    width: 30.404255319149%;
+    *width: 30.351063829787%
+}
+
+.row-fluid .span3 ul.unstyled {
+    margin-left: 0;
+    list-style: none
+}
+
+.row-fluid .span3 li.title {
+	padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Remonter haut de page */
+#remonter {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+    opacity: 0.3;
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    filter: alpha(opacity=30); }
+
+#remonter:hover {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    filter: alpha(opacity=70); }
+    
+/* Pour video YouTube responsive design */
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}

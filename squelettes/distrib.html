@@ -1,0 +1,9 @@
+#HTTP_HEADER{Content-Type: application/x-javascript; charset=#CHARSET}
+document.write('<div class="box distrib" style="background: #EEE; padding: 1.5em; border: 3px solid #A39F9A;">');
+document.write('<h2 style="margin: 0; padding: 0;"><a href="#URL_SITE_SPIP/" title="Vu sur Les p’tites bêtes" style="float: right; margin: 0 0 .1px 5px; padding: 0; border-bottom: none;"><img src="squelettes/promo/vu-sur-les-ptites-betes.png" alt="monsite.fr" /></a></h2>');
+document.write('<h3 style="font-weight: bold;"><a href="#URL_SITE_SPIP/" style="border-bottom: none;">Vu sur [(#NOM_SITE_SPIP|addslashes)]</a></h3>');
+document.write('<p>Site collaboratif de créations musicales contemporaines<br>Conçu pour publier, écouter et partager</p><ul>');
+<BOUCLE_articles(ARTICLES){!par date}{0,10}>
+document.write('<li><a href="[(#URL_ARTICLE|url_absolue)]">[(#TITRE|addslashes)]</a></li>\n');
+</BOUCLE_articles>
+document.write('</ul></div>');

@@ -1,0 +1,87 @@
+<THELIA_produit type="PRODUIT"
+	[ caracdisp="(#ENV{caracdisp}|?{#ENV{caracdisp},''})"]
+	[ caracval="(#ENV{caracval}|?{#ENV{caracval},''})"]
+	[ declinaison="(#ENV{declinaison}|?{#ENV{declinaison},''})"]
+	[ declidisp="(#ENV{declidisp}|?{#ENV{declidisp},''})"]
+	[ declival="(#ENV{declival}|?{#ENV{declival},''})"]
+	[ declistockmini="(#ENV{declistockmini}|?{#ENV{declistockmini},''})"]
+	[ courant="(#ENV{courant}|?{#ENV{courant},''})"]
+	[ profondeur="(#ENV{profondeur}|?{#ENV{profondeur},''})"]
+	[ exclusion="(#ENV{exclusion}|?{#ENV{exclusion},''})"]
+	[ poids="(#ENV{poids}|?{#ENV{poids},''})"]
+	[ caracteristique="(#ENV{caracteristique}|?{#ENV{caracteristique},''})"]
+	[ prixmax="(#ENV{prixmax}|?{#ENV{prixmax},''})"]
+	[ prixmin="(#ENV{prixmin}|?{#ENV{prixmin},''})"]
+	[ aleatoire="(#ENV{aleatoire}|?{#ENV{aleatoire},''})"]
+	[ classement="(#ENV{classement}|?{#ENV{classement},''})"]
+	[ motcle="(#ENV{motcle}|?{#ENV{motcle},''})"]
+	[ garantie="(#ENV{garantie}|?{#ENV{garantie},''})"]
+	[ reappro="(#ENV{reappro}|?{#ENV{reappro},''})"]
+	[ bloc="(#ENV{bloc}|?{#ENV{bloc},''})"]
+	[ deb="(#ENV{deb}|?{#ENV{deb},''})"]
+	[ boutique="(#ENV{boutique}|?{#ENV{boutique},''})"]
+	[ num="(#ENV{num}|?{#ENV{num},''})"]
+	[ nouveaute="(#ENV{nouveaute}|?{#ENV{nouveaute},''})"]
+	[ promo="(#ENV{promo}|?{#ENV{promo},''})"]
+	[ ref="(#ENV{ref}|?{#ENV{ref},''})"]
+	[ rubrique="(#ENV{rubrique}|?{#ENV{rubrique},''})"]
+	[ id="(#ENV{id}|?{#ENV{id},''})"]>
+<div class="produits_thelia THELIA-NOUVEAU[produit_nouveau][] THELIA-PROMO[produit_promotion][]" [style='[(#ENV{align}|match{^(left|right)$}|?{' '})float:#ENV{align};] (#ENV{align,center}|=={center}|?{'',' '})']>	
+<form class="formulaire_spip formulaire_produit" action="#URL_PAGE{panier,lang=#LANG}" method="post" id="formAjouterTHELIA-ID">
+    <fieldset>
+	<input type="hidden" name="thelia_action" value="ajouter" />
+        <input type="hidden" name="ref" value="THELIA-REF" />
+                							
+	[(#ENV{photo}|=={non}|?{'',' '})<THELIA_images type="IMAGE" produit="THELIA-ID"[ hauteur="(#ENV{hauteur}|?{#ENV{hauteur},''})"][ largeur="(#ENV{largeur}|?{#ENV{largeur},'100'})"] num="1"><img src="THELIA-IMAGE" class="spip_logos" /></THELIA_images> ]
+
+	<h3 class="h3">THELIA-TITRE</h3>
+	<div class="thelia_description">THELIA-DESCRIPTION</div>
+	<T_produitpromo>
+	<THELIA_produitpromo type="PRODUIT" ref="THELIA-REF" promo="1">
+		<p class="thelia_prix"><:spipthelia:prix:>&nbsp;:&nbsp;<span class="thelia_promo">THELIA-PRIX2&nbsp;&euro;</span> <:spipthelia:au_lieu_de:> THELIA-PRIX&nbsp;&euro;</p>
+	</THELIA_produitpromo>
+	</T_produitpromo>
+		<p class="thelia_prix"><:spipthelia:prix:> : <span class="thelia_sans_promo">THELIA-PRIX&nbsp;&euro;</span></p>
+	<//T_produitpromo>
+
+	<div class="declinaisonProduit">
+		<THELIA_declinaisons type="DECLINAISON" rubrique="THELIA-RUBRIQUE" produit="THELIA-ID">
+		<T_decldisp1>
+			<THELIA_decldisp1 type="DECLIDISP" declinaison="THELIA-ID" produit="THELIA-PRODUIT">
+			</THELIA_decldisp1> 
+			THELIA-TITRE : 
+			<select name="declinaisonTHELIA-ID">
+		</T_decldisp1>
+		<//T_decldisp1>
+									
+		<THELIA_decldisp type="DECLIDISP" declinaison="THELIA-ID" produit="THELIA-PRODUIT">
+		 	<option value="THELIA-ID">THELIA-TITRE</option>
+		</THELIA_decldisp> 
+ 									
+		<T_decldisp2>
+			<THELIA_decldisp2 type="DECLIDISP" declinaison="THELIA-ID" produit="THELIA-PRODUIT">
+			</THELIA_decldisp2> 
+			</select>
+		</T_decldisp2>
+		<//T_decldisp2>
+									
+										 		
+		</THELIA_declinaisons>
+	</div>
+	
+
+	<!--<div class="boutons">
+		<input type="submit" class="submit" value="<:spipthelia:ajouter_panier:>" />
+	</div>-->
+	
+	<div class="boutons">
+	    <button type="submit" class="positive"> 
+           <:spipthelia:ajouter_panier:>
+        </button>
+	</div>
+	
+    </fieldset>
+</form>
+</div>
+</THELIA_produit>
+

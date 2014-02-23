@@ -1,0 +1,43 @@
+<!--[if !IE]><!-->	
+	<script type="text/javascript">
+	function downloadJSAtOnload() {
+		var script1 = document.createElement("script");
+		 var player = document.createElement("iframe");player.setAttribute('allowtransparency','true');
+		script1.src = "squelettes/js/scripts.js";
+		player.src = "http://bandcamp.com/EmbeddedPlayer/v=2/album=3538365513/layout=http_3A_2F_2Fwww.softrains.fr_2Ftheme-a_2Fbclayout.txt/bgcol=FFFFFF/linkcol=333333/debug=true/transparent=true";
+		document.body.appendChild(script1);
+		 document.getElementById("player").appendChild(player);
+	}
+	if (window.addEventListener) window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent) window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+	</script>
+<!--<![endif]-->
+
+<h1 class="#EDIT{nom_site_spip}">#NOM_SITE_SPIP</h1>
+<div class="#EDIT{slogan_site_spip} lead">#SLOGAN_SITE_SPIP</div>
+
+<!--[if !IE]><!-->
+<div class="player" id="player"></div>
+
+	<div class="links">
+		<ul class="links-list">
+			<li><a href="#" title="Port&eacute;e Libre"><i class="icon-home"></i><span> Port&eacute;e Libre</span></a></li>
+			<li><a href="spip.php?rubrique6#nousecrire" title="Contact"><i class="icon-envelope"></i><span>Contact</span></a></li>
+			<li><a href="spip.php?article13" title="Mentions l&eacute;gales"><i class="icon-legal"></i><span> Mentions l&eacute;gales</span></a></li>
+			<li><a href="http://porteelibre.bandcamp.com" title="Bandcamp"><i class="icon-eraser"></i><span> Bandcamp</span></a></li>
+		</ul>
+	</div>
+<!--<![endif]-->
+
+<!--[if IE]>
+[<div class="logo">(#LOGO_SITE_SPIP|image_reduire{500,256}|adaptive_images)</div>]
+<![endif]-->
+
+<div class="form-search">
+#FORMULAIRE_RECHERCHE
+</div>
+
+<!--[if !IE]><!-->
+<a href="#" id="knob"><i class="icon-angle-down"></i></a>
+<!--<![endif]-->
