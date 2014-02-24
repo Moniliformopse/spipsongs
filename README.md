@@ -9,4 +9,4 @@ Adresse du site : http://www.notretribunet.fr/songs/
 Documentation et Squelette du projet propulsé par Spip 3 et Thelia -> https://github.com/Moniliformopse/spipsongs/tree/master/squelettes
 
 
-![alt text](https://raw.github.com/Moniliformopse/spipsongs/develop/screenshot.jpg "Title")
+![alt text](https://raw.github.com/Moniliformopse/spipsongs/master/screenshot.jpg "Title")
